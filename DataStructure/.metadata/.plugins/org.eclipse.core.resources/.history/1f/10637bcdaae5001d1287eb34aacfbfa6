@@ -1,0 +1,33 @@
+package com.map;
+
+public class Create 
+{
+	void createmap()
+	{
+		if(int i=0;i<=map.length-1;i++)
+		{
+			
+		}
+	}
+	void put()
+	{
+		
+	}
+	void delete()
+	{
+		
+	}
+	void display()
+	{
+		
+	}
+	void reset()
+	{
+		
+	}
+	public static void main(String[] args) 
+	{
+		int i,value = 0;
+		int map = value;
+	}
+}

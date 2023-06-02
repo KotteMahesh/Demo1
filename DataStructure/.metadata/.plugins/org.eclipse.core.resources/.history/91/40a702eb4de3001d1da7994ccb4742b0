@@ -1,0 +1,56 @@
+package com.ma;
+
+public class LinkedList 
+{		
+	Node head;
+	void insert(int ele) {
+		Node n=new Node(ele);
+		if(head==null) {
+			head=n;
+		}
+		else {
+			Node temp=head;
+			while(temp.next!=null) {
+				temp=temp.next;
+			}
+			temp.next=n;
+		}
+		System.out.println(ele+" is successfully added.......!!!");
+		
+	}
+	void display() {
+		if(head==null) {
+			System.out.println("Linked List is Empty...!!!");
+		} 
+		else {
+			Node temp=head;
+			while(temp.next!=null) {
+				System.out.println(temp.data+" --->");
+				temp=temp.next;
+		}
+			System.out.println(temp.data+" --->");
+	}
+		System.out.println("================");
+	}
+	void delete()
+	{
+		if(head==null)
+		{
+			System.out.println("LinkedList is Empty.....!!!!");
+		}
+		else if(head.next==null)
+		{
+			head=null;
+		}
+		else
+		{
+			Node temp=head;
+			while(temp.next.next!=null)
+			{
+				temp=temp.next;
+			}
+			System.out.println(temp.next.data+" Got Deleted....!!!!");
+			temp.next=null;
+		}
+	}
+}

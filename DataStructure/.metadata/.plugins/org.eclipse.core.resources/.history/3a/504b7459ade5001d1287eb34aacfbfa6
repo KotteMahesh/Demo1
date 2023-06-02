@@ -1,0 +1,49 @@
+package com.map;
+
+public class HashMap 
+{
+	static int[] hashmap;
+	
+	static void createmap(int size)
+	{
+		hashmap = new int[size];
+		for(int i=0;i<hashmap.length;i++)
+		{
+			hashmap[i] = -1;
+		}
+		System.out.println("HashMap had been created with size: "+size);
+	}
+	static void put(int value)
+	{
+		int index = value%hashmap.length;
+		if(hashmap[index]!=-1)
+		{
+			System.out.println("Its Already Occupied...!!!!");
+		}
+		else
+		{
+			hashmap[index]=value;
+			System.out.println("value had been added to the map with key: "+index);
+		}
+	}
+	static void delete()
+	{
+		
+	}
+	static void display()
+	{
+		
+	}
+	static void reset()
+	{
+		
+	}
+	public static void main(String[] args) 
+	{
+		createmap(5);
+		put(10);
+		put(12);
+		put(13);
+		put(17);
+	}
+}

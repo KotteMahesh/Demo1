@@ -1,0 +1,56 @@
+package com.Binary;
+
+public class Node 
+{
+	int data;
+	Node left;
+	Node right;
+	
+	Node(int data)
+	{
+		this.data=data;
+	}
+	static void insert(Node root,int ele)
+	{
+		if(ele<root.data)
+		{
+			if(root.left==null)
+			{
+				root.left = new Node(ele);
+				System.out.println(ele+" had been added towards left: "+root.data);
+			}
+			else
+			{
+				insert(root.left,ele);
+			}
+		}
+		else if(ele>root.data)
+		{
+			if(root.right==null)
+			{
+				root.right = new Node(ele);
+				System.out.println(ele+" had been added towards right: "+root.data);
+			}
+		}
+	}
+	static void display(Object root)
+	{
+		if(root==null)
+		{
+			System.out.println("tree is empty");
+		}
+		else
+		{
+			System.out.println("tree is not empty");
+		}
+	}
+	public static void main(String[] args) 
+	{
+		Node root = new Node(15);
+		insert(root,10);
+		insert(root,9);
+		insert(root,110);
+		insert(root,62);
+		insert(root,8);
+	}
+}

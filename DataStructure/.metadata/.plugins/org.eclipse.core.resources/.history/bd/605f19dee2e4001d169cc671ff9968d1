@@ -1,0 +1,29 @@
+package com.Binary;
+
+public class Node 
+{
+	int data;
+	Node left;
+	Node right;
+	
+	Node(int data)
+	{
+		this.data=data;
+	}
+	void insert(Node root,int ele)
+	{
+		if(ele<root.data)
+		{
+			if(root.left==null)
+			{
+				root.left = new Node(ele);
+				System.out.println(ele+" had been added tiwards left: "+root.data);
+			}
+		}
+	}
+	public static void main(String[] args) 
+	{
+		Node root = new Node(15);
+		insert(root,10);
+	}
+}

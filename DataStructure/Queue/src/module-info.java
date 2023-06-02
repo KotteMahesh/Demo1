@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author Daw
+ *
+ */
+module Queue {
+}

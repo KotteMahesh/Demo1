@@ -1,0 +1,29 @@
+package com.map;
+
+public class HashMap 
+{
+	void createmap()
+	{
+		
+	}
+	void put()
+	{
+		
+	}
+	void delete()
+	{
+		
+	}
+	void display()
+	{
+		
+	}
+	void reset()
+	{
+		
+	}
+	public static void main(String[] args) 
+	{
+		
+	}
+}
